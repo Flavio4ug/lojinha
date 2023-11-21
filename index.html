@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1 class="logo-nome">
+                    Uranio dOces e tudo de BOOm
+                </h1>
+            </div>
+            <div id="buscar">
+                <input type="text" id="buscar-input" placeholder="pesquisar produto" oninput="buscarProdutos()">
+                <button onclick="buscarSite()">buscar</button>
+            </div>
+            <div id="carrinho-icon" onclick="toggleCarrinho()">
+                <div class="imagem">
+                    <img src="cabum.jpg" alt="">
+                </div>
+                <span id="content-carrinho">0</span>
+            </div>
+            <div id="carrinho-itens" style="display: none;">
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">valor total: R$0,00</span>
+                <button class="limpa" onclick="limparCarrinho()">limpar goiania</button>
+
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <div class="produtos">
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="plutonio239.jpg">
+                        </div>
+                        <div class="infos">
+                            <h3>plutonio</h3>
+                            <p>R$ 80,00 Kg</p>
+                            <button onclick="addCarrinho('moletom 1', 80.00)">adcionar ao carrinho</button>
+
+                        </div>
+
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="HEUranium.jpg">
+                        </div>
+                        <div class="infos">
+                            <h3>Uranio</h3>
+                            <p>R$ 80,00 kg</p>
+                            <button onclick="addCarrinho('moletom 1', 80.00)">adicionar ao carrinho</button>
+
+                        </div>
+
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="tório.webp">
+                        </div>
+                        <div class="infos">
+                            <h3>tório</h3>
+                            <p>R$ 80,00 Kg</p>
+                            <button onclick="addCarrinho('tório gostosinho', 80.00)">adicionar ao carrinho</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="caracteristicas-del-radio.jpg">
+                        </div>
+                        <div class="infos">
+                            <h3>Rádio</h3>
+                            <p>R$ 80,00 Kg</p>
+                            <button onclick="addCarrinho('rádio', 80.00)">adicionar ao carrinho</button>
+
+                        </div>
+
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="tritio.webp">
+                        </div>
+                        <div class="infos">
+                            <h3>tritio</h3>
+                            <p>R$ 80,00 Kg</p>
+                            <button onclick="addCarrinho('trítio', 80.00)">adicionar ao carrinho</button>
+
+                        </div>
+
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="protactinio.jpg">
+                        </div>
+                        <div class="infos">
+                            <h3>protactinio</h3>
+                            <p>R$ 80,00 Kg</p>
+                            <button onclick="addCarrinho('moletom 1', 80.00)">adicionar ao carrinho</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
